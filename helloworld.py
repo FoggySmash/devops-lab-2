@@ -1,2 +1,3 @@
+welcome = 'Welcome! '
 for x in range(10):
-    print(x+1)
+    print(welcome*x)

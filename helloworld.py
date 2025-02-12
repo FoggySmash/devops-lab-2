@@ -1,2 +1,3 @@
+string = 'This is another string! '
 for x in range(10):
-    print(x+1)
+    print(string*x)

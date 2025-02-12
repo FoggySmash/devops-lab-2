@@ -19,3 +19,11 @@ app.get('/api/posts/:year/:month', (req, res) => {
 });
 
 console.log('Hello World');
+
+// creates a page at localhost:x/api/numbers/(index) in the range 0 to 10
+for (let index = 0; index <= 10; index++) {
+    console.log(index);
+    app.get(`/api/${index}`, (req, res) => {
+        res.send([index]);
+    })
+}
